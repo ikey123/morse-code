@@ -1,0 +1,88 @@
+/* 特色卡片样式 */
+.featured-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.featured-card .morse-display.large {
+    font-size: 24px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.code-explanation {
+    color: #666;
+    margin: 1rem 0;
+    font-size: 16px;
+}
+
+.code-details {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e9ecef;
+}
+
+.code-details h4 {
+    color: #444;
+    margin-bottom: 1rem;
+}
+
+.code-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.code-details li {
+    margin-bottom: 0.8rem;
+    color: #666;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.code-details li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #007bff;
+}
+
+.learn-more {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* 快速参考指南样式 */
+.reference-guide .guide-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.guide-card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.guide-card h3 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.guide-card ul {
+    padding-left: 1.5rem;
+    color: #666;
+}
+
+.guide-card li {
+    margin-bottom: 0.5rem;
+} 

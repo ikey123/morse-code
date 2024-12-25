@@ -1,0 +1,77 @@
+/* 字母表网格布局 */
+.letters-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.letter-card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.letter-card h3 {
+    font-size: 24px;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+/* FAQ 部分样式 */
+.faq-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.faq-card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.faq-card h3 {
+    font-size: 18px;
+    margin-bottom: 1rem;
+    color: #444;
+}
+
+.faq-card p {
+    color: #666;
+    line-height: 1.5;
+}
+
+/* 使用指南样式 */
+.usage-guide .guide-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.guide-card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.guide-card h3 {
+    font-size: 18px;
+    margin-bottom: 1rem;
+    color: #444;
+}
+
+.guide-card ul,
+.guide-card ol {
+    padding-left: 1.5rem;
+    color: #666;
+}
+
+.guide-card li {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+} 

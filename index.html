@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Code Morse Code - Morse Code Translator & Decoder - convert to morse code </title>
+    <meta name="description" content="Morse code translator & decoder. Use our Morse code interpreter to quickly convert text to Morse code or decode Morse code to English for accurate translation of Morse code.">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/translator.css">
+    <link rel="stylesheet" href="./css/features.css">
+    <link rel="stylesheet" href="./css/history.css">
+    <link rel="stylesheet" href="./css/technical.css">
+    <link rel="stylesheet" href="./css/modern.css">
+    <link rel="stylesheet" href="./css/resources.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <style>
+        .margin-top {
+            margin-top: 3rem;
+        }
+
+        .methods-grid, .guide-content {
+            display: grid;
+            gap: 2rem;
+        }
+
+        .methods-grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .guide-content {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .method-card, .guide-card {
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .help-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .help-card {
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Hero Section -->
+        <header class="hero">
+            <h1>Code Morse Code Translator & Decoder</h1>
+            <p class="hero-subtitle">Free online Morae code translator with code help. Convert to Morse code or decode Morse code into English instantly.</p>
+            <div class="hero-features">
+                <span>✓ Morse Code in Morse Code Display</span>
+                <span>✓ Code Help Available</span>
+                <span>✓ Mors Decoder Support</span>
+            </div>
+        </header>
+
+        <!-- Main Navigation -->
+        <nav class="main-nav">
+            <ul>
+                <li><a href="./morse-code-words/index.html">Morse Code Translator</a></li>
+                <li><a href="./morse-code-alphabet/index.html">Morse Code Alphabet</a></li>
+                <li><a href="./morse-code-numbers/index.html">Morse Code Numbers</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <!-- Translator Tool Section -->
+            <section id="translator" class="translator-section">
+                <h2>Free Morse Code Translator & Interpreter</h2>
+                <div class="translator-container mobile-stack">
+                    <div class="translation-wrapper mobile-stack">
+                        <div class="input-group">
+                            <label for="input">Enter Text or Morse Code:</label>
+                            <textarea 
+                                id="input" 
+                                placeholder="Type text or Morse code..."
+                                aria-label="Input text or Morse code"
+                            ></textarea>
+                        </div>
+
+                        <div class="output-group">
+                            <label for="output">Translation Result:</label>
+                            <textarea 
+                                id="output" 
+                                readonly 
+                                aria-label="Translation result"
+                            ></textarea>
+                        </div>
+                    </div>
+
+                    <div class="controls-wrapper">
+                        <div class="main-controls">
+                            <button id="translateBtn" class="primary">Translate</button>
+                            <button id="playBtn">Play Sound</button>
+                            <button id="copyBtn">Copy</button>
+                            <button id="clearBtn">Clear</button>
+                        </div>
+                        <div class="speed-control">
+                            <label for="speedControl">Speed:</label>
+                            <input type="range" id="speedControl" min="0.5" max="2" step="0.1" value="1">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Translation Methods -->                    
+            <section class="translation-methods section-block">
+                <h2>Complete Translation Guide</h2>
+                <div class="methods-grid">
+                    <article class="method-card">
+                        <h3>English to Morse Code Translator</h3>
+                        <ul>
+                            <li>Convert text to Morse code instantly</li>
+                            <li>See letters in Morse code format</li>
+                            <li>English to Morse code translator support</li>
+                            <li>Letters into Morse code conversion</li>
+                        </ul>
+                    </article>
+
+                    <article class="method-card">
+                        <h3>Morse Code to English Decoder</h3>
+                        <ul>
+                            <li>Convert Morse code to English text</li>
+                            <li>Morse code into English translation</li>
+                            <li>Morse code decipher support</li>
+                            <li>Morse to text conversion</li>
+                        </ul>
+                    </article>
+
+                    <article class="method-card">
+                        <h3>Code Help & Support</h3>
+                        <ul>
+                            <li>Comprehensive code help available</li>
+                            <li>Morse code interpreter assistance</li>
+                            <li>Norse code translator compatibility</li>
+                            <li>International Morse code standards</li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Features Section -->
+            <section class="features">
+                <h2>Advanced Translation Features</h2>
+                <div class="features-grid mobile-grid">
+                    <article class="feature-card">
+                        <h3>Multiple Translation Options</h3>
+                        <ul>
+                            <li>Morae code translator support</li>
+                            <li>Code Morse code conversion</li>
+                            <li>Morse code to text translation</li>
+                            <li>Text to Morse code generator</li>
+                        </ul>
+                    </article>
+
+                    <article class="feature-card">
+                        <h3>Audio Features</h3>
+                        <ul>
+                            <li>Morse code translator sound</li>
+                            <li>Morse code translator by sound</li>
+                            <li>Morse code translator audio</li>
+                            <li>Audio playback support</li>
+                        </ul>
+                    </article>
+
+                    <article class="feature-card">
+                        <h3>Learning Tools</h3>
+                        <ul>
+                            <li>Study Morse code guides</li>
+                            <li>Learn Morse code basics</li>
+                            <li>Morse code chart reference</li>
+                            <li>Practice exercises available</li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Conversion Guide -->
+            <section class="conversion-guide section-block">
+                <h2>How to Convert and Translate Morse Code</h2>
+                <div class="guide-content">
+                    <article class="guide-card">
+                        <h3>Converting English to Morse Code</h3>
+                        <ol>
+                            <li>Use our English to Morse code translator</li>
+                            <li>Type text to convert to Morse code</li>
+                            <li>See Morse code in Morse code format</li>
+                            <li>Use the Morse code creator tools</li>
+                        </ol>
+                    </article>
+
+                    <article class="guide-card">
+                        <h3>Translating Morse to English</h3>
+                        <ol>
+                            <li>Enter Morse code to convert to English</li>
+                            <li>Use our Morse decoder tools</li>
+                            <li>Get instant translation of Morse code</li>
+                            <li>Convert Morse code to English text</li>
+                        </ol>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Help Section -->
+            <section id="help" class="help-section section-block">
+                <h2>Code Help & Support Center</h2>
+                <div class="help-content">
+                    <div class="help-grid">
+                        <article class="help-card">
+                            <h3>Getting Started</h3>
+                            <ul>
+                                <li>Basic Morse code help</li>
+                                <li>Translation assistance</li>
+                                <li>Morse converter guide</li>
+                                <li>Morse translator tips</li>
+                            </ul>
+                        </article>
+
+                        <article class="help-card">
+                            <h3>Advanced Features</h3>
+                            <ul>
+                                <li>International Morse support</li>
+                                <li>Morse flag signals</li>
+                                <li>Letters Morse code guide</li>
+                                <li>What is in Morse code</li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Historical Context -->
+            <section class="historical-context section-block">
+                <h2>The Evolution of Morse Code Translation and Communication</h2>
+                <div class="history-content grid-layout">
+                    <article class="historical-overview content-card">
+                        <h3>From Code Morse Code to Modern Morse Code Translator</h3>
+                        <p>Since its invention in the 1830s, the way we convert to Morse code has evolved dramatically. What began as manual translation of Morse code has transformed into sophisticated morse code translator systems, including advanced morse code interpreter technology and morse alphabet translator tools.</p>
+                        <p>The development of Norse code translator systems and morae code translator platforms has made it easier than ever to perform morse code to english translations. Modern tools now support everything from basic morse to text conversion to complex morse code in morse code representations.</p>
+                    </article>
+
+                    <article class="key-milestones">
+                        <h3>Evolution of Morse Code Translation</h3>
+                        <ul>
+                            <li>1832: Manual morse code to text conversion begins</li>
+                            <li>1844: First english to morse code transmission</li>
+                            <li>1851: International morse code standards established</li>
+                            <li>1900s: First morse code decoder systems</li>
+                            <li>1990s: Digital morse code translator development</li>
+                            <li>2000s: Online morse code translator tools emerge</li>
+                            <li>Present: Advanced morse code translator audio systems</li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Technical Details -->
+            <section class="technical-details">
+                <h2>Understanding Modern Morse Code Translation</h2>
+                <div class="technical-content">
+                    <article class="translation-methods">
+                        <h3>Advanced Translation Technologies</h3>
+                        <p>Contemporary morse code interpreter systems offer multiple ways to translate:</p>
+                        <ul>
+                            <li>Text to morse code conversion
+                                <ul>
+                                    <li>English to morse code translator</li>
+                                    <li>Letters into morse code systems</li>
+                                    <li>Morse code generator tools</li>
+                                    <li>Morse code creator platforms</li>
+                                </ul>
+                            </li>
+                            <li>Morse to English translation
+                                <ul>
+                                    <li>Morse code to english decoder</li>
+                                    <li>Morse code decipher tools</li>
+                                    <li>Convert morse code to english</li>
+                                    <li>Morse code into english systems</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </article>
+
+                    <article class="modern-features">
+                        <h3>Enhanced Translation Features</h3>
+                        <p>Modern morse converter tools include:</p>
+                        <ul>
+                            <li>Morse code translator sound capabilities</li>
+                            <li>Morse code translator by sound options</li>
+                            <li>Code help systems for beginners</li>
+                            <li>Mors decoder technology</li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Modern Applications -->
+            <section class="modern-applications">
+                <h2>Contemporary Uses of Morse Code Translation</h2>
+                <div class="applications-content">
+                    <article class="translation-applications">
+                        <h3>Professional Translation Tools</h3>
+                        <p>Modern morse translator applications serve various needs:</p>
+                        <ul>
+                            <li>Emergency Communications
+                                <ul>
+                                    <li>Morse code translator english emergency systems</li>
+                                    <li>International morse code protocols</li>
+                                    <li>Morse flag signal interpretation</li>
+                                    <li>Study morse code for emergency preparedness</li>
+                                </ul>
+                            </li>
+                            <li>Educational Applications
+                                <ul>
+                                    <li>Learn morse code platforms</li>
+                                    <li>Morse code chart references</li>
+                                    <li>What is in morse code guides</li>
+                                    <li>Letters morse code training</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </article>
+
+                    <article class="technology-integration">
+                        <h3>Modern Translation Technology</h3>
+                        <p>Advanced features in current systems:</p>
+                        <ul>
+                            <li>Morse code translator audio integration</li>
+                            <li>Text to morse code automation</li>
+                            <li>Morse to text conversion tools</li>
+                            <li>Code translator assistance</li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Learning Resources -->
+            <section class="extended-resources">
+                <h2>Comprehensive Morse Code Learning Tools</h2>
+                <div class="resources-content">
+                    <article class="learning-methods">
+                        <h3>Translation Learning Strategies</h3>
+                        <p>Master morse code translation through proven techniques:</p>
+                        <ul>
+                            <li>Basic Translation Skills
+                                <ul>
+                                    <li>Using morse alphabet translator tools</li>
+                                    <li>Practice with morse code translator sound</li>
+                                    <li>Understanding morse code in morse code</li>
+                                    <li>Converting english to morse code</li>
+                                </ul>
+                            </li>
+                            <li>Advanced Translation Practice
+                                <ul>
+                                    <li>Norse code translator techniques</li>
+                                    <li>Morse code interpreter skills</li>
+                                    <li>Translation of morse code methods</li>
+                                    <li>International morse standards</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Popular Morse Code Phrases -->
+            <section class="common-phrases section-block margin-top">
+                <h2>Popular Morse Code Phrases</h2>
+                <div class="phrases-grid grid-layout">
+                    <article class="phrase-card content-card">
+                        <h3>SOS in Morse Code</h3>
+                        <div class="morse-display">
+                            <span>• • • — — — • • •</span>
+                        </div>
+                        <p class="phrase-description">Universal distress signal</p>
+                        <div class="phrase-details">
+                            <p>SOS morse code pattern: ···———···</p>
+                            <a href="./morse-code-words/sos-in-morse-code/index.html" class="learn-more">Learn more</a>
+                        </div>
+                    </article>
+                    
+                    <article class="phrase-card content-card">
+                        <h3>I Love You in Morse Code</h3>
+                        <div class="morse-display">
+                            <span>•• / •—•• ——— •••— • / —•—— ——— ••——</span>
+                        </div>
+                        <p class="phrase-description">Express your feelings in morse</p>
+                        <div class="phrase-details">
+                            <p>A romantic way to say I love you</p>
+                            <a href="./morse-code-words/i-love-you-in-morse-code/index.html" class="learn-more">Learn more</a>
+                        </div>
+                    </article>
+                    
+                    <article class="phrase-card content-card">
+                        <h3>Hello in Morse Code</h3>
+                        <div class="morse-display">
+                            <span>•••• • •—•• •—•• ———</span>
+                        </div>
+                        <p class="phrase-description">Basic greeting in morse</p>
+                        <div class="phrase-details">
+                            <p>Common greeting in morse code</p>
+                            <a href="./morse-code-words/hello-in-morse-code/index.html" class="learn-more">Learn more</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Common Words</h3>
+                    <ul>
+                        <li><a href="./morse-code-words/hello-in-morse-code/index.html">Hello in Morse Code</a></li>
+                        <li><a href="./morse-code-words/i-love-you-in-morse-code/index.html">I Love You in Morse Code</a></li>
+                        <li><a href="./morse-code-words/sos-in-morse-code/index.html">SOS in Morse Code</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Reference</h3>
+                    <ul>
+                        <li><a href="./morse-code-alphabet/index.html">Morse Code Alphabet</a></li>
+                        <li><a href="./morse-code-numbers/index.html">Morse Code Numbers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="/blog">Morse Code Blog</a></li>
+                        <li><a href="/practice">Practice Exercises</a></li>
+                        <li><a href="/history">History of Morse Code</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="./js/morse.js"></script>
+    <script src="./js/audio.js"></script>
+    <script src="./js/translator.js"></script>
+</body>
+</html> 

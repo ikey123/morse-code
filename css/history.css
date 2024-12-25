@@ -1,0 +1,31 @@
+.history-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.historical-overview {
+    margin-bottom: 3rem;
+}
+
+.key-milestones ul {
+    list-style: none;
+    position: relative;
+    padding-left: 2rem;
+}
+
+.key-milestones li {
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.key-milestones li::before {
+    content: "";
+    position: absolute;
+    left: -2rem;
+    top: 0.5rem;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--primary-color);
+} 

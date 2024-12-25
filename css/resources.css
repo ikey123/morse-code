@@ -1,0 +1,62 @@
+.resources-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.learning-methods {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.learning-methods h3 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.learning-methods ul {
+    list-style: none;
+}
+
+.learning-methods > ul > li {
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+.learning-methods ul ul {
+    margin-top: 0.5rem;
+    margin-left: 1.5rem;
+}
+
+.learning-methods ul ul li {
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.learning-methods ul ul li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .technical-content,
+    .applications-content,
+    .resources-content {
+        padding: 0 1rem;
+    }
+
+    .translation-methods,
+    .modern-features,
+    .translation-applications,
+    .technology-integration,
+    .learning-methods {
+        padding: 1.5rem;
+    }
+} 

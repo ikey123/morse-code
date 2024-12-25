@@ -1,0 +1,99 @@
+/* 数字网格布局 */
+.numbers-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.number-card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.number-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.number-card h3 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.number-card .morse-display {
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    background: #f8f9fa;
+    border-radius: 4px;
+    line-height: 1.5;
+}
+
+.number-card .number-description {
+    color: #666;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+/* 移动端适配 */
+@media screen and (max-width: 768px) {
+    .numbers-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        padding: 0.5rem;
+    }
+
+    .number-card {
+        padding: 1rem;
+    }
+
+    .number-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .number-card .morse-display {
+        font-size: 1.25rem;
+        padding: 0.5rem;
+    }
+}
+
+/* 学习指南样式 */
+.patterns-guide .guide-content,
+.learning-tips .tips-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.guide-card,
+.tips-card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.guide-card h3,
+.tips-card h3 {
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 18px;
+}
+
+.guide-card ul,
+.tips-card ul {
+    padding-left: 1.5rem;
+    color: #666;
+}
+
+.guide-card li,
+.tips-card li {
+    margin-bottom: 0.8rem;
+    line-height: 1.5;
+} 

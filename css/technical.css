@@ -1,0 +1,49 @@
+.technical-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.translation-methods,
+.modern-features {
+    margin-bottom: 3rem;
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.translation-methods h3,
+.modern-features h3 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.translation-methods ul,
+.modern-features ul {
+    list-style: none;
+}
+
+.translation-methods > ul > li {
+    margin-bottom: 1.5rem;
+}
+
+.translation-methods ul ul {
+    margin-top: 0.5rem;
+    margin-left: 1.5rem;
+}
+
+.translation-methods ul ul li,
+.modern-features ul li {
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.translation-methods ul ul li::before,
+.modern-features ul li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+} 

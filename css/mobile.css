@@ -1,0 +1,213 @@
+@media screen and (max-width: 768px) {
+    /* 容器适配 */
+    .container {
+        padding: 10px;
+    }
+    
+    /* 标题适配 */
+    .hero h1 {
+        font-size: 24px;
+        line-height: 1.3;
+    }
+    
+    .hero-subtitle {
+        font-size: 16px;
+    }
+    
+    /* 导航适配 */
+    .main-nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    /* 翻译器适配 */
+    .mobile-stack {
+        flex-direction: column;
+    }
+    
+    .translation-wrapper {
+        gap: 20px;
+    }
+    
+    .input-group, 
+    .output-group {
+        width: 100%;
+    }
+    
+    textarea {
+        min-height: 120px;
+    }
+    
+    /* 控制按钮适配 */
+    .controls-wrapper {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .main-controls {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    /* 网格布局适配 */
+    .mobile-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    /* 卡片适配 */
+    .method-card,
+    .feature-card {
+        padding: 15px;
+    }
+    
+    /* 页脚适配 */
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    /* 统一各部分样式 */
+    .section-block {
+        padding: 25px 15px;
+        margin: 20px 0;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .section-block h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+        color: #333;
+        text-align: center;
+    }
+    
+    /* 网格布局统一 */
+    .grid-layout {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    /* 内容卡片统一样式 */
+    .content-card {
+        background: #f8f9fa;
+        padding: 15px;
+        border-radius: 6px;
+        border: 1px solid #e9ecef;
+    }
+    
+    .content-card h3 {
+        font-size: 18px;
+        margin-bottom: 15px;
+        color: #444;
+    }
+    
+    /* 短语展示部分统一样式 */
+    .phrases-grid .phrase-item {
+        text-decoration: none;
+        color: inherit;
+        transition: transform 0.2s;
+    }
+    
+    .phrases-grid .phrase-content {
+        padding: 15px;
+    }
+    
+    .morse-display {
+        background: #f1f3f5;
+        padding: 10px;
+        border-radius: 4px;
+        margin: 10px 0;
+        text-align: center;
+    }
+    
+    /* Complete Translation Guide 部分样式调整 */
+    .translation-methods {
+        padding: 25px 15px;
+        margin: 20px 0;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .translation-methods h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+        color: #333;
+        text-align: center;
+    }
+    
+    .method-card {
+        background: #f8f9fa;
+        padding: 20px;
+        margin-bottom: 15px;
+        border-radius: 6px;
+        border: 1px solid #e9ecef;
+    }
+    
+    .method-card h3 {
+        font-size: 18px;
+        margin-bottom: 15px;
+        color: #444;
+    }
+    
+    .method-card ul {
+        margin: 0;
+        padding-left: 20px;
+    }
+    
+    .method-card li {
+        margin-bottom: 8px;
+        line-height: 1.5;
+        color: #666;
+    }
+    
+    /* 数字网格布局 */
+    .numbers-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        padding: 1rem;
+    }
+    
+    .number-card {
+        background: #fff;
+        padding: 1.5rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+    
+    .number-card h3 {
+        font-size: 24px;
+        margin-bottom: 1rem;
+        color: #333;
+    }
+    
+    .number-card .morse-display {
+        font-size: 20px;
+        margin: 1rem 0;
+        padding: 0.5rem;
+        background: #f8f9fa;
+        border-radius: 4px;
+    }
+    
+    .number-card .number-description {
+        font-size: 14px;
+        color: #666;
+        margin-top: 0.5rem;
+    }
+    
+    /* 说明部分样式 */
+    .number-guide {
+        margin-top: 2rem;
+    }
+    
+    .guide-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+} 

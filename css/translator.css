@@ -1,0 +1,263 @@
+/* 主要内容区域样式 */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* 介绍部分样式 */
+.intro {
+    text-align: center;
+    margin-bottom: var(--spacing);
+}
+
+/* 翻译器容器样式 */
+.translator-section {
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1000px; /* 限制最大宽度 */
+}
+
+/* 翻译器容器 */
+.translator-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* 输入输出并列布局 */
+.translation-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+/* 输入输出组样式 */
+.input-group,
+.output-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* 标签样式 */
+label {
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+/* 文本框样式 */
+textarea {
+    width: 100%;
+    height: 120px; /* 减小高度 */
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    resize: vertical;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+textarea[readonly] {
+    background-color: #f8f9fa;
+    cursor: default;
+}
+
+/* 控制按钮区域 */
+.controls-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0.5rem;
+}
+
+/* 主要控制按钮组 */
+.main-controls {
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* 按钮样式 */
+button {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+button.primary {
+    background: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+button#clearBtn {
+    background-color: var(--danger-color);
+}
+
+button#copyBtn {
+    background-color: var(--success-color);
+}
+
+/* 速度控制样式 */
+.speed-control {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.speed-control input[type="range"] {
+    width: 100px;
+}
+
+/* 常用短语卡片样式 */
+.quick-reference {
+    margin: var(--spacing) 0;
+}
+
+.phrases {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.phrase-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    text-decoration: none;
+    color: var(--text-color);
+    transition: transform 0.3s ease;
+}
+
+.phrase-card:hover {
+    transform: translateY(-3px);
+}
+
+.phrase-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.phrase-card .morse {
+    font-family: monospace;
+    color: var(--secondary-color);
+    margin: 0.5rem 0;
+}
+
+.phrase-card .description {
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+/* FAQ部分样式 */
+.faq {
+    margin: var(--spacing) 0;
+}
+
+details {
+    background: white;
+    padding: 1rem;
+    border-radius: var(--radius);
+    margin-bottom: 1rem;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+details p {
+    margin-top: 1rem;
+    padding-left: 1.5rem;
+}
+
+/* 页脚样式 */
+footer {
+    margin-top: var(--spacing);
+    padding-top: var(--spacing);
+    border-top: 1px solid var(--border-color);
+}
+
+footer nav {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+footer a {
+    color: var(--text-light);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--secondary-color);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .translation-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .controls-wrapper {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .main-controls {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .speed-control {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* 深色模式支持 */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #1a1a1a;
+        --text-color: #ffffff;
+        --text-light: #cccccc;
+        --border-color: #333333;
+    }
+
+    .nav,
+    .translator,
+    .phrase-card,
+    details {
+        background: #2c2c2c;
+    }
+
+    textarea {
+        background: #333333;
+        color: white;
+    }
+
+    textarea[readonly] {
+        background: #2c2c2c;
+    }
+} 
