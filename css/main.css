@@ -284,4 +284,64 @@ h2 {
         font-size: 1rem;
         padding: 0.75rem;
     }
+}
+
+/* 教程部分样式 */
+.morse-tutorial {
+    padding: 3rem 0;
+    background-color: var(--white);
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.tutorial-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+.tutorial-content article {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.tutorial-content h3 {
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+.tutorial-content h4 {
+    color: #444;
+    margin: 1rem 0;
+    font-size: 1.1rem;
+}
+
+.tutorial-content p {
+    color: #666;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.tutorial-content ul,
+.tutorial-content ol {
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.tutorial-content li {
+    color: #666;
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .tutorial-content {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
 } 
