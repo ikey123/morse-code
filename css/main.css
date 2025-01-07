@@ -344,4 +344,48 @@ h2 {
         grid-template-columns: 1fr;
         padding: 0 1rem;
     }
+}
+
+/* Brand Styles */
+.brand-container {
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--white);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.brand-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 0.5rem;
+}
+
+.brand-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+    .brand-container {
+        padding: 0.75rem 1rem;
+    }
+    
+    .brand-name {
+        font-size: 1rem;
+    }
+    
+    .brand-icon {
+        width: 20px;
+        height: 20px;
+    }
 } 
